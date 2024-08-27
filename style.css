@@ -18,6 +18,7 @@
   gap: 1rem;
   padding: var(--card-padding);
   align-items: center;
+  max-width: 400px;
 }
 
 img {
