@@ -10,5 +10,15 @@ article > * {
 
 /* Flow spacing for alle h2 der er direkte barn af article */
 article > h2 {
-  margin-top: calc(var(--flow-space) * 4);
+  --flow-space: 2rlh;
+}
+
+/* Flow spacing for alle h3 der er direkte barn af article */
+article > h3 {
+  --flow-space: 1rlh;
+}
+
+/* Mindre flow space for elementer der er lige efter en h3 */
+article > h3 + * {
+  --flow-space: 0.25rlh;
 }
