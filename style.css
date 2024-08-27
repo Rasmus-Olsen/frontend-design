@@ -29,7 +29,7 @@ body {
 
 .container-image img {
   height: auto;
-  width: 100%;
+  width: var(--image-width);
   object-fit: cover;
   border-radius: 100px;
 }
