@@ -20,15 +20,10 @@ h1 {
 
 .grid {
   max-width: 1100px;
-  margin: 10px auto;
+  margin: 40px auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
-}
-
-.grid-content {
-  gap: 16px;
-  display: grid;
 }
 
 .btn {
