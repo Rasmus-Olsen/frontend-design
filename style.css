@@ -29,14 +29,13 @@ body {
 
 .container-image img {
   height: auto;
-  width: var(--image-width);
+  width: 100%;
   object-fit: cover;
   border-radius: 100px;
 }
 
 .container-content {
   height: var(--image-width);
-  padding: var(--card-padding);
 }
 
 .container-content h3 {
@@ -51,7 +50,6 @@ body {
   display: flex;
   justify-content: space-between;
   color: var(--color-icon);
-  height: 25px;
 }
 
 /* .container-content-logos svg {
