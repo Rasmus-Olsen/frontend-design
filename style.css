@@ -34,7 +34,7 @@ p {
   color: var(--color-text-button);
   background: var(--color-bg-button);
   display: inline-block;
-  border-radius: 16px;
+  border-radius: 100px;
 }
 
 .grid-images img {
@@ -48,7 +48,7 @@ p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, auto);
-  gap: 10px;
+  gap: 20px;
 }
 
 .grid-images img:first-child {
@@ -106,6 +106,6 @@ p {
   }
 }
 /*
-* Ved godt det ikke er rigtigt lavet med important + generelt er 
+* Ved godt det ikke er rigtigt lavet med !important + generelt er 
   mit image gallri dårligt lavet og skal ses på
 */
