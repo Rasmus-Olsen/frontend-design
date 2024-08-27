@@ -30,7 +30,7 @@
 }
 
 .container-content {
-  height: var(--image-width);
+  height: fit-content;
 }
 
 .container-content h3 {
