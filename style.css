@@ -13,6 +13,10 @@
 }
 
 /* Begynd her... */
+body {
+  padding: 16px;
+}
+
 .container {
   display: flex;
   max-width: 400px;
@@ -20,6 +24,7 @@
   padding: var(--card-padding);
   align-items: center;
   height: var(--image-width);
+  flex-wrap: wrap;
 }
 
 .container-image img {
@@ -31,6 +36,7 @@
 
 .container-content {
   height: var(--image-width);
+  padding: var(--card-padding);
 }
 
 .container-content h3 {
