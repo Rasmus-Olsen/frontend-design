@@ -46,48 +46,6 @@ p {
 
 .grid-images {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-  grid-template-rows: repeat(4, auto); /* 4 rows with auto height */
-  gap: 10px;
-}
-
-/* Center the first and last images */
-.grid-images img:first-child {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-}
-
-.grid-images img:last-child {
-  grid-column: 2 / 3;
-  grid-row: 4 / 5;
-}
-
-/* Position all images excluding the first and last */
-.grid-images img:not(:first-child):not(:last-child) {
-  grid-row: auto;
-}
-
-/* Position images in the first column */
-.grid-images img:nth-child(2),
-.grid-images img:nth-child(4) {
-  grid-column: 1 / 2;
-}
-
-/* Position images in the third column */
-.grid-images img:nth-child(5),
-.grid-images img:nth-child(6) {
-  grid-column: 3 / 4;
-}
-
-/* Special rule for the third image to span two rows */
-.grid-images img:nth-child(3) {
-  grid-column: 2 / 3;
-  grid-row: 2 / 4;
-}
-
-/* 
-.grid-images {
-  display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, auto);
   gap: 10px;
@@ -127,4 +85,3 @@ p {
   grid-column: 2 / 3;
   grid-row: 4 / 5;
 }
- */
