@@ -9,10 +9,6 @@
 }
 
 /* Begynd her... */
-body {
-  /* background: var(--color-body); */
-}
-
 h1 {
   color: var(--color-heading);
   font-size: 4rem;
@@ -55,6 +51,41 @@ p {
   gap: 10px;
 }
 
+/* Center the first and last images */
+.grid-images img:first-child,
+.grid-images img:last-child {
+  grid-column: 2 / 3;
+}
+
+/* Position images excluding the first and last */
+.grid-images img:not(:first-child):not(:last-child) {
+  grid-row: span 1; /* Default row span */
+}
+
+/* Place images in the left column */
+.grid-images img:not(:first-child):nth-child(2n) {
+  grid-column: 1 / 2;
+}
+
+/* Place images in the right column */
+.grid-images img:not(:first-child):nth-child(2n + 1):not(:nth-child(3)) {
+  grid-column: 3 / 4;
+}
+
+/* Special rule for the third image to span two rows */
+.grid-images img:nth-child(3) {
+  grid-column: 2 / 3;
+  grid-row: 2 / 4;
+}
+
+/* 
+.grid-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  gap: 10px;
+}
+
 .grid-images img:first-child {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
@@ -88,4 +119,4 @@ p {
 .grid-images img:last-child {
   grid-column: 2 / 3;
   grid-row: 4 / 5;
-}
+} */
