@@ -37,8 +37,9 @@ h1 {
 
 .grid-images {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  grid-template-rows: repeat(3, auto); /* 3 rows with auto height */
+  gap: 10px;
 }
 
 .grid-images img {
@@ -46,4 +47,14 @@ h1 {
   height: auto;
   width: 100%;
   border-radius: 16px;
+}
+
+.grid-images img:first-child {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.grid-images img:last-child {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
 }
