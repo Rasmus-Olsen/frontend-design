@@ -6,9 +6,10 @@
   }
 }
 
-.card .card:not(:has(h2, img)) p {
+.card:not(:has(h2, img)) p {
   font-size: 1.25rem;
   line-height: 1.4;
+  color: red;
 }
 
 @layer reset, cards;
