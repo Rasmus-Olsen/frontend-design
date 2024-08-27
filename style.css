@@ -90,6 +90,7 @@ p {
   body {
     padding: 16px;
   }
+
   .grid {
     grid-template-columns: 1fr;
   }
@@ -100,7 +101,12 @@ p {
   }
 
   .grid-images img {
-    grid-column: auto;
-    grid-row: auto;
+    grid-column: span 1;
+    grid-row: span 1;
   }
 }
+
+/*
+* Ved godt det ikke er rigtigt lavet med important + generelt er 
+  mit image gallri dårligt lavet og skal ses på
+*/
