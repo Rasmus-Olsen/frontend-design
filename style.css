@@ -15,22 +15,19 @@
 /* Begynd her... */
 .container {
   display: flex;
-  &-image {
-    & img {
-      height: 200px;
-      width: 200px;
-      object-fit: cover;
-    }
-  }
-  &-content {
-    background-color: red;
-    h3 {
-    }
-    p {
-    }
-    &-logos {
-      display: flex;
-      justify-content: space-between;
-    }
-  }
+}
+
+.container-image img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.container-content {
+  background-color: red;
+}
+
+.container-content-logos {
+  display: flex;
+  justify-content: space-between;
 }
