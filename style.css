@@ -10,7 +10,7 @@ article > * {
 
 /* Flow spacing for alle h2 der er direkte barn af article */
 article > h2 {
-  --flow-space: 2rlh;
+  --flow-space:: calc( 4 * var(--flow-space))
 }
 
 /* Flow spacing for alle h3 der er direkte barn af article */
