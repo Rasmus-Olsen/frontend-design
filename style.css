@@ -22,15 +22,15 @@
   height: var(--image-width);
 }
 
-.container-image {
-  width: var(--image-width);
-}
-
 .container-image img {
   height: auto;
   width: 100%;
   object-fit: cover;
   border-radius: 100px;
+}
+
+.container-content {
+  height: var(--image-width);
 }
 
 .container-content h3 {
