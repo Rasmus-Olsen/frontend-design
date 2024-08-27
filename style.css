@@ -102,8 +102,8 @@ p {
   }
 
   .grid-images img {
-    grid-column: auto !important;
-    grid-row: auto !important;
+    grid-column: auto;
+    grid-row: auto;
   }
 }
 /*
