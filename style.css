@@ -1,10 +1,6 @@
-:root {
-  --flow-space: 0.5rlh;
-}
-
 /* Flow space for article */
 article {
-  --flow-space: var(--flow-space);
+  --flow-space: 0.5rlh;
 }
 
 /* Flow space mellem elementer */
@@ -14,7 +10,7 @@ article > * {
 
 /* Flow spacing for alle h2 der er direkte barn af article */
 article > h2 {
-  --flow-space: calc(4 * var(--flow-space));
+  --flow-space: 2rlh;
 }
 
 /* Flow spacing for alle h3 der er direkte barn af article */
