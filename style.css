@@ -15,19 +15,26 @@
 /* Begynd her... */
 .container {
   display: flex;
+  max-width: 400px;
+  gap: 1rem;
 }
 
 .container-image img {
   height: 200px;
   width: 200px;
   object-fit: cover;
+  border-radius: 100px;
 }
 
-.container-content {
+.container-content h3 {
 }
 
 .container-content-logos {
   display: flex;
   justify-content: space-between;
-  max-width: 300px;
+  color: var(--color-icon);
 }
+
+/* .container-content-logos svg {
+  color: var(--color-icon);
+} */
