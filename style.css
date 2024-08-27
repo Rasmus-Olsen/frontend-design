@@ -9,13 +9,12 @@
   --font-heading: 1.75rem;
 
   /* Når du synes, du er færdig, så ændr værdien herunder til '1' for at se dit resultat i browseren */
-  --hide-overlay: 1;
+  --hide-overlay: 0;
 }
 
 /* Begynd her... */
 .container {
   display: flex;
-  max-width: 400px;
   gap: 1rem;
   padding: var(--card-padding);
   align-items: center;
