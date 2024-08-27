@@ -46,29 +46,36 @@ p {
 
 .grid-images {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, auto);
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  grid-template-rows: repeat(4, auto); /* 4 rows with auto height */
   gap: 10px;
 }
 
 /* Center the first and last images */
-.grid-images img:first-child,
+.grid-images img:first-child {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
 .grid-images img:last-child {
   grid-column: 2 / 3;
+  grid-row: 4 / 5;
 }
 
-/* Position images excluding the first and last */
+/* Position all images excluding the first and last */
 .grid-images img:not(:first-child):not(:last-child) {
-  grid-row: span 1; /* Default row span */
+  grid-row: auto;
 }
 
-/* Place images in the left column */
-.grid-images img:not(:first-child):nth-child(2n) {
+/* Position images in the first column */
+.grid-images img:nth-child(2),
+.grid-images img:nth-child(4) {
   grid-column: 1 / 2;
 }
 
-/* Place images in the right column */
-.grid-images img:not(:first-child):nth-child(2n + 1):not(:nth-child(3)) {
+/* Position images in the third column */
+.grid-images img:nth-child(5),
+.grid-images img:nth-child(6) {
   grid-column: 3 / 4;
 }
 
@@ -119,4 +126,5 @@ p {
 .grid-images img:last-child {
   grid-column: 2 / 3;
   grid-row: 4 / 5;
-} */
+}
+ */
