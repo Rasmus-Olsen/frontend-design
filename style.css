@@ -1,3 +1,7 @@
+:root {
+  --flow-space: 0.5rlh;
+}
+
 /* Flow space for article */
 article {
   --flow-space: 0.5rlh;
