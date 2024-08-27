@@ -15,6 +15,7 @@ body {
 
 h1 {
   color: var(--color-heading);
+  font-size: 3rem;
 }
 
 .grid {
@@ -37,4 +38,10 @@ h1 {
 }
 
 .grid-images {
+}
+
+.grid-images img {
+  display: block;
+  height: auto;
+  width: 100%;
 }
