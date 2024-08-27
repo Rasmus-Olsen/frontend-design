@@ -85,3 +85,22 @@ p {
   grid-column: 2 / 3;
   grid-row: 4 / 5;
 }
+
+@media (max-width: 777px) {
+  body {
+    padding: 20px 16px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-images {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .image-item {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
