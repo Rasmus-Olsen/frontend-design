@@ -31,14 +31,19 @@ h1 {
   text-decoration: none;
   color: var(--color-text-button);
   background: var(--color-bg-button);
-  display: block;
+  display: inline-block;
+  border-radius: 16px;
 }
 
 .grid-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .grid-images img {
   display: block;
   height: auto;
   width: 100%;
+  border-radius: 16px;
 }
