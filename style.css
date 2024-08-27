@@ -88,7 +88,7 @@ p {
 
 @media (max-width: 777px) {
   body {
-    padding: 20px 16px;
+    padding: 16px;
   }
   .grid {
     grid-template-columns: 1fr;
@@ -99,7 +99,7 @@ p {
     grid-template-rows: 1fr;
   }
 
-  .image-item {
+  .grid-images img {
     grid-column: auto;
     grid-row: auto;
   }
