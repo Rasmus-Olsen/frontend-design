@@ -51,6 +51,7 @@ body {
   display: flex;
   justify-content: space-between;
   color: var(--color-icon);
+  height: 25px;
 }
 
 /* .container-content-logos svg {
