@@ -35,6 +35,7 @@
 
 .container-content h3 {
   font-size: var(--font-heading);
+  font-weight: bold;
 }
 
 .container-content p {
