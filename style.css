@@ -93,7 +93,6 @@ p {
 
   .grid {
     grid-template-columns: 1fr;
-    /* grid-template-rows: 1fr; */
   }
 
   .grid-images {
@@ -102,11 +101,10 @@ p {
   }
 
   .grid-images img {
-    grid-column: span 1;
-    grid-row: span 1;
+    grid-column: auto !important;
+    grid-row: auto !important;
   }
 }
-
 /*
 * Ved godt det ikke er rigtigt lavet med important + generelt er 
   mit image gallri dårligt lavet og skal ses på
