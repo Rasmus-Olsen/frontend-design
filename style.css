@@ -23,6 +23,7 @@
     }
   }
   &-content {
+    background-color: red;
     h3 {
     }
     p {
