@@ -9,7 +9,7 @@
   --font-heading: 1.75rem;
 
   /* Når du synes, du er færdig, så ændr værdien herunder til '1' for at se dit resultat i browseren */
-  --hide-overlay: 1;
+  --hide-overlay: 0;
 }
 
 /* Begynd her... */
@@ -24,10 +24,10 @@
 }
 
 .container-content {
-  background-color: red;
 }
 
 .container-content-logos {
   display: flex;
   justify-content: space-between;
+  max-width: 300px;
 }
