@@ -7,16 +7,12 @@
 }
 
 /* 1. opgave */
-/* 
-.card:not(:has(h3, img)) p {
-  font-size: 1.25rem;
-  line-height: 1.4;
-  color: red;
-} */
 
-.card:not(:has(h3)):not(:has(img)) p {
-  font-size: 1.25rem;
-  line-height: 1.4;
+.card:not(:has(h3, img)) {
+  p {
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
 }
 
 /* 2. opgave */
