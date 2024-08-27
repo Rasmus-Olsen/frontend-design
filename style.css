@@ -18,11 +18,17 @@
   max-width: 400px;
   gap: 1rem;
   padding: var(--card-padding);
+  align-items: center;
+  height: var(--image-width);
+}
+
+.container-image {
+  width: var(--image-width);
 }
 
 .container-image img {
   height: auto;
-  width: var(--image-width);
+  width: 100%;
   object-fit: cover;
   border-radius: 100px;
 }
