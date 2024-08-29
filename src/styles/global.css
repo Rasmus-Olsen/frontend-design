@@ -65,10 +65,6 @@ main {
       grid-column: 1 / -1;
       padding-inline: max(1rem, 50% - var(--content-width) / 2);
       padding-block-end: 1rem;
-
-      li {
-        scroll-snap-align: center;
-      }
     }
   }
 }
@@ -88,4 +84,8 @@ ul {
     padding: var(--card-padding);
     align-self: start;
   }
+}
+
+li {
+  scroll-snap-align: center;
 }
