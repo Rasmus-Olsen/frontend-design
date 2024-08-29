@@ -8,5 +8,7 @@ article {
 
   img {
     grid-column: full-start / img-end;
+    background: red;
+    height: 20px;
   }
 }
