@@ -83,7 +83,7 @@ ul {
     flex-shrink: 0;
     background: #ebebeb;
     color: #595566;
-    border-radius: var();
+    border-radius: var(--card-border-radius);
     font-size: 1rem;
     padding: var(--card-padding);
     align-self: start;
