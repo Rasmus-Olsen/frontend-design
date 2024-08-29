@@ -1,4 +1,14 @@
 article {
-    max-width: 65ch;
-    margin-inline: auto;
+  display: grid;
+  grid-template-columns: [full-start] 1fr 2rem [content-start img-end] [content] minmax(0, 65ch) 2rem 1fr [full-start];
+
+  > * {
+    grid-column: content;
+  }
+
+  img {
+    grid-column: full-start / img-end;
+    background: red;
+    height: 20px;
+  }
 }
