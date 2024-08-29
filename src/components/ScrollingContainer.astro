@@ -2,7 +2,7 @@
 const { cardContent } = Astro.props;
 ---
 
-<ul class="full-width">
+<ul class="full">
   {
     cardContent.map((card) => (
       <li>
@@ -34,7 +34,7 @@ main {
     grid-column: 2;
   }
   
-  .full-width {
+  .full {
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: inherit;
