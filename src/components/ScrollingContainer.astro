@@ -14,10 +14,13 @@ const { cardContent } = Astro.props;
 </ul>
 
 <style>
-  main {
-    > * {
-      grid-column: 2;
-    }
+  main { display: grid;
+  grid-template-columns:
+    1fr minmax(0, 1200px) 1fr;
+  
+  > * {
+    grid-column: 2;
+  }
   li {
       grid-column: 1 / -1;
     }
