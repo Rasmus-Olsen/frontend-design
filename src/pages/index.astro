@@ -7,8 +7,11 @@ import AccordionContainer from "../components/AccordionContainer.astro";
 
 <Layout title="Welcome to Astro.">
   <main>
-    <h1>Accordion</h1>
-    <AccordionContainer data={faqData} exclusive="true" />
+    <div class="faq">
+      
+      <h1>Customer Questions</h1>
+      <AccordionContainer data={faqData} exclusive="true" />
+    </div>
   </main>
 </Layout>
 
